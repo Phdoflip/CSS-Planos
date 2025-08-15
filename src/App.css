@@ -1,0 +1,76 @@
+/* App.css */
+
+/* Centraliza na tela */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+/* Container geral */
+.artigos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Card de artigo */
+.artigos article {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.artigos article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.artigos h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #367eea;
+  margin-bottom: 8px;
+}
+
+/* Texto */
+.artigos p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Botão Ler mais */
+.ler-mais {
+  align-self: flex-end; /* coloca o botão no lado direito */
+  background-color: white;
+  color: #3b00a6;
+  font-weight: 500;
+  border: 2px solid #3b00a6;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.ler-mais:hover {
+  background-color: #3b00a6;
+  color: white;
+}
